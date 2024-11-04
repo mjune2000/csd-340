@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 10px;
+}
+
+ol {
+    border: 1px solid pink;
+    border-radius: 15px;
+    list-style: decimal inside;
+    font-weight: 300;
+}
+
+ul {
+    border: 1px dashed pink;
+    border-radius: 15px;
+    list-style: upper-roman inside;
+    font-weight: 300;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container > div {
+    width: 45%;
+}
+
+#container > div:last-child {
+    margin-top: 60px;
+    width: 100%;
+    float: right;
+    margin-bottom: 20px;
+}
