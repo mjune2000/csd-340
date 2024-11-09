@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Mikaela June Assignment 3.3 */
 #container {
     margin-top: 50px;
@@ -50,4 +51,58 @@ a:hover {
 
 a:visited {
     color: pink;
+=======
+/* Mikaela June Assignment 3.3 */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1 {
+    color: #C4AEA3;
+    background-color: #F8F8F8;
+    border-color: #D6A800;
+    border: 1px;
+    padding: 10px;
+}
+
+h2 {
+    color: #C4AEA3;
+    background-color: #F8F8F8;
+    border-color: #D6A800;
+    border: 1px;
+    padding: 10px;
+}
+
+h3 {
+    color: #C4AEA3;
+    background-color: #F8F8F8;
+    border-color: #D6A800;
+    border: 1px;
+    padding: 10px;
+}
+
+h4 {
+    color: #C4AEA3;
+    background-color: #F8F8F8;
+    border-color: #D6A800;
+    border: 1px;
+    padding: 10px;
+}
+
+a {
+    font-weight: bold;
+    color: #6d5968;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #9e86a3;
+}
+
+a:visited {
+    color: pink;
+>>>>>>> 7717712fbaa629f39b90a4a2a547ceb17b7d4bfe
 }
