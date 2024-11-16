@@ -40,7 +40,7 @@ h4 {
 
 a {
     font-weight: bold;
-    color: #6d5968;
+    color: rgba(78, 52, 95);
     text-decoration: none;
 }
 
@@ -50,8 +50,9 @@ a:hover {
 }
 
 a:visited {
-    color: pink;
-=======
+    color: rgb(99, 57, 99);
+}
+
 /* Mikaela June Assignment 3.3 */
 #container {
     margin-top: 50px;
