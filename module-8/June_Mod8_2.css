@@ -1,0 +1,117 @@
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: rgb(15, 14, 14);
+    border-bottom: 15px solid black;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #3a3a3a;
+    color: peachpuff;
+}
+
+#container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Add shadow to make it appear as a card */
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;  /* Adjust the width of the cards */
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    font-size: 16px;
+}
+
+.card-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+thead {
+    background-color: #333;
+    color: #ddd;
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;           
+    justify-content: space-between;  
+    padding: 10px;      
+    width: 100%;
+    bottom: 0;
+}
+
+
+footer p {
+    margin: 0;  
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
