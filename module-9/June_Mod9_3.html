@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="Practicing adding meta tags to HTML files" />
+    <meta name="Keywords" content="meta, HTML, web development" />
+    <meta name="robots" content="nofollow" />
+    <meta name="author" content="Mikaela June" />
+
+    <link href="June_Mod9_3.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../index.html">
+
+    <script>
+        var firstVariableValue = "college";
+        var secondVariableValue = "sports";
+        var thirdVariableValue = "draw";
+        var fourthVariableValue = "M";
+    </script>
+</head>
+
+<body>
+    <div id="container">
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+    <h2>Chapter 1: Introduction to Me</h2>
+    <p class="intro">My name is Mikaela June and I am currently 24 years old. I grew up in Southington, CT for most of my life until I moved to Tampa, FL for <span id="college">_________</span>. I decided to go to school down south to get out of the snow and into the sun and heat.</p>
+        <button type="button"
+            onclick="document.getElementById('college').innerHTML = firstVariableValue">college</button> <br />
+    <p>
+        Growing up I played many different <span id="sports">_________</span> including softball, basketball, soccer, volleyball, and football. My main sport that I focused on growing up was softball where I played on travel teams competing all over the east coast. Once I got to Highschool I quit my schools softball team and tried my hand at track where I ran the 400m hurdles and threw javelin which I fell in love with.
+        <button type="button"
+            onclick="document.getElementById('sports').innerHTML = secondVariableValue">sports</button> <br />
+    </p>
+    <p>
+        I have always been into art, baking, and being able to be creative. <span class="sentence">I love to <span id="draw">_________</span>, crochet, garden, and build.</span>  I am the type of person who if I think I can do, make, or build something myself I will do it.
+        <button type="button"
+            onclick="document.getElementById('draw').innerHTML = thirdVariableValue">draw</button> <br />
+    </p>
+    <p>
+        I am the oldest daughter, granddaughter, and niece in my family. I have one sister who is four years younger than me named Mia. A fun little fact about my immediate family is that all of our names start with the letter <span id="M">_________</span>. This was not always my parents plan but thought my sister may feel left out if she was the only one whose name didn't start with an M.
+        <button type="button"
+            onclick="document.getElementById('M').innerHTML = fourthVariableValue">M</button> <br />
+    </p>
+    
+    <hr/>
+    <address>
+        <a href="https://www.bellevue.edu">Bellevue University</a> <br>
+        1000 Galvin Road South<br>
+        Bellevue, NE 68005<br>
+    </address>
+    </div>
+</body>
+
+</html>
