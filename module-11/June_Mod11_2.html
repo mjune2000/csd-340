@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="../index.html">
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        #container {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>This is an interactive To Do List. Type in your first item in the textbox, then click Add. Click Display to see the current items in the list. Click on Delete Last Entry if you'd like to remove the last entry. </p>
+
+    <div id="container">
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button onclick="addItem()">Add</button>
+        <button onclick="deleteLastItem()">Delete Last Entry</button>
+        <button onclick="displayItems()">Display</button>
+    </div>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+        let itemArray = [];
+
+        function addItem() {
+            const textBox = document.getElementById("textInput");
+            const textValue = textBox.value.trim();
+            if (textValue !== "") {
+                itemArray.push(textValue);
+                alert("Added: " + textValue);
+                textBox.value = "";
+            } else {
+                alert("Please enter something to add.");
+            }
+        }
+
+        function deleteLastItem() {
+            if (itemArray.length > 0) {
+                const removedItem = itemArray.pop(); 
+                alert("Deleted: " + removedItem);
+            } else {
+                alert("No items to delete.");
+            }
+        }
+
+        function displayItems() {
+            const outputDiv = document.getElementById("output");
+            if (itemArray.length > 0) {
+                outputDiv.innerHTML = "<h3>Array Contents:</h3><ul>" + 
+                                      itemArray.map((item, index) => "<li>" + (index + 1) + ". " + item + "</li>").join('') + 
+                                      "</ul>";
+            } else {
+                outputDiv.innerHTML = "<p>The array is empty.</p>";
+            }
+        }
+    </script>
+</body>
+</html>
